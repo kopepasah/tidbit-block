@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "kopepasah/tidbit",
+	"version": "0.1.0",
+	"title": "Tidbit",
+	"category": "text",
+	"icon": "megaphone",
+	"description": "A small and particularly interesting piece of information, news, or gossip.",
+	"example": {
+		"attributes": {
+			"content": "A small and particularly interesting piece of information, news, or gossip.",
+			"icon": "starFilled"
+		},
+		"innerBlocks": [
+			{
+				"name": "core/paragraph",
+				"attributes": {
+					"content": "A small and particularly interesting piece of information, news, or gossip.",
+					"textColor": "#111111",
+					"style" : {
+						"color": {
+							"text": "#111111",
+							"background": "#f6f6f6"
+						}
+					}
+				}
+			}
+		]
+	},
+	"supports": {
+		"html": false,
+		"align": ["wide", "full"]
+	},
+	"attributes": {
+		"icon": {
+			"type": "string",
+			"default": "starFilled"
+		},
+		"iconSize": {
+			"type": "integer",
+			"default": 32
+		},
+		"textColor": {
+			"type": "string"
+		}
+	},
+	"textdomain": "tidbit",
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css"
+}
