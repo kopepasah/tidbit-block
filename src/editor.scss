@@ -1,0 +1,5 @@
+.wp-block-tidbit {
+	.editor-styles-wrapper .block-editor-block-list__layout.is-root-container > &:where(:not(.alignwide):not(.alignfull)) {
+		max-width: calc( var(--wp--style--global--content-size, 620px) + (2.375em * 2) );
+	}
+}

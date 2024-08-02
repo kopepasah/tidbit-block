@@ -1,6 +1,10 @@
 .wp-block-tidbit {
 	position: relative;
 
+	.is-layout-constrained > &:where( :not(.alignwide):not(.alignfull) ) {
+		max-width: calc( var( --wp--style--global--content-size, 620px ) + ( 2.375em * 2 ) );
+	}
+
 	> div:first-child {
 		position: absolute;
 		z-index: 1;

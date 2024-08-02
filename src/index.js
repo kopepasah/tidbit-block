@@ -7,6 +7,7 @@ import { registerBlockType } from '@wordpress/blocks';
  * Styles
  */
 import './style.scss';
+import './editor.scss';
 
 /**
  * Internal dependencies
