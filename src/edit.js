@@ -74,14 +74,13 @@ export default function Edit( { attributes, setAttributes, clientId } ) {
 				paragraphBlock?.attributes?.style?.color?.text ||
 				'';
 
-			setAttributes( { textColor } );
+			const iconFill = ( ! textColor && 'inherit' ) ||
+				( /^#/.test( textColor ) && textColor ) ||
+				`var(--wp--preset--color--${ textColor })`;
+
+			setAttributes( { iconFill } );
 		}
 	}, [ paragraphBlock, setAttributes ] );
-
-	const iconFill =
-		( ! attributes.textColor && 'inherit' ) ||
-		( /^#/.test( attributes.textColor ) && attributes.textColor ) ||
-		`var(--wp--preset--color--${ attributes.textColor })`;
 
 	return (
 		<Fragment>
@@ -122,7 +121,7 @@ export default function Edit( { attributes, setAttributes, clientId } ) {
 					<Icon
 						icon={ icons[ attributes.icon ] }
 						size={ attributes.iconSize }
-						style={ { fill: iconFill } }
+						style={ { fill: attributes.iconFill } }
 					/>
 				</div>
 				<InnerBlocks

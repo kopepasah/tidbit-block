@@ -14,15 +14,13 @@ const { Icon, ...icons } = iconsModule; // Extract the Icon component from the r
  * @return {Element} Element to render.
  */
 export default function Save( { attributes } ) {
-	const { icon, textColor } = attributes;
-
 	return (
 		<div { ...useBlockProps.save() }>
 			<div>
 				<Icon
-					icon={ icons[ icon ] }
+					icon={ icons[ attributes.icon ] }
 					size={ attributes.iconSize }
-					style={ { fill: textColor } }
+					style={ { fill: attributes.iconFill } }
 				/>
 			</div>
 			<InnerBlocks.Content />

@@ -41,8 +41,9 @@
 			"type": "integer",
 			"default": 32
 		},
-		"textColor": {
-			"type": "string"
+		"iconFill": {
+			"type": "string",
+			"default": "inherit"
 		}
 	},
 	"textdomain": "tidbit",
