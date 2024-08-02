@@ -28,3 +28,7 @@ node_modules/
 
 # wp-env override config
 .wp-env.override.json
+
+# System Files
+.DS_Store
+Thumbs.db
