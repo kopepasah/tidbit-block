@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Tidbit Block
  * Description:       A small and particularly interesting piece of information, news, or gossip.
- * Requires at least: 6.4
+ * Requires at least: 6.2
  * Requires PHP:      7.2
  * Version:           0.1.0
  * Author:            Justin Kopepasah

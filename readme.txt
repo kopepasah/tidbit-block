@@ -1,7 +1,7 @@
 === Tidbit ===
 Contributors:      kopepasah
-Tags:              block
-Tested up to:      6.4
+Tags:              block, paragraph, notice, info, icon
+Tested up to:      6.6
 Stable tag:        0.1.0
 License:           MPL-2.0
 License URI:       https://www.mozilla.org/en-US/MPL/2.0/
@@ -15,7 +15,7 @@ Tidbit is a block that allows you to add a small and particularly interesting pi
 == Installation ==
 
 1. Upload the plugin files to the `/wp-content/plugins/tidbit` directory, or install the plugin through the WordPress plugins screen directly.
-1. Activate the plugin through the 'Plugins' screen in WordPress
+2. Activate the plugin through the 'Plugins' screen in WordPress
 
 == Frequently Asked Questions ==
 
