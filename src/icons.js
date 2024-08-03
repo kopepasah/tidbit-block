@@ -1,3 +1,6 @@
+/**
+ * WordPress dependencies
+ */
 import * as iconsModule from '@wordpress/icons';
 const { Icon, ...icons } = iconsModule;
 
